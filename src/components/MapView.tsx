@@ -1,6 +1,6 @@
-import { MapPin } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
+import { LocationPinIcon } from './ui/location-pin-icon';
 
 interface Location {
   name: string;
@@ -49,7 +49,7 @@ const MapView = ({ locations }: MapViewProps) => {
               className="w-full text-xs h-7"
               onClick={() => window.open(location.mapsLink, '_blank')}
             >
-              <MapPin className="mr-1 h-3 w-3" />
+              <LocationPinIcon className="mr-1 h-3 w-3" size={12} />
               Directions
             </Button>
           </Card>

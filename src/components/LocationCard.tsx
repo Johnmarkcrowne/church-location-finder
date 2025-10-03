@@ -1,6 +1,7 @@
-import { MapPin, Clock, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { LocationPinIcon } from "@/components/ui/location-pin-icon";
 
 interface LocationCardProps {
   name: string;
@@ -30,7 +31,7 @@ export const LocationCard = ({ name, address, city, serviceTimes, image, mapsLin
           <div className="space-y-1">
             <h3 className="text-lg font-bold text-foreground">{name}</h3>
             <div className="flex items-start gap-1.5 text-muted-foreground">
-              <MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" />
+              <LocationPinIcon className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" size={14} />
               <div className="text-xs">
                 <p>{address}, {city}</p>
               </div>
