@@ -107,7 +107,7 @@ const Index = () => {
       <section className="flex flex-col lg:flex-row h-[calc(100vh-200px)] min-h-[600px]">
         {/* Left Side - Locations List */}
         <div className="w-full lg:w-2/5 overflow-y-auto py-8 px-4 bg-background">
-          <div className="max-w-2xl mx-auto space-y-6">
+          <div className="max-w-xl mx-auto space-y-4">
             {locations.map((location) => (
               <LocationCard key={location.name} {...location} />
             ))}
