@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { LocationCard } from "@/components/LocationCard";
 import { Button } from "@/components/ui/button";
 import MapView from "@/components/MapView";
@@ -272,6 +273,8 @@ const locations = [
 ];
 
 const Index = () => {
+  const [selectedLocation, setSelectedLocation] = useState<typeof locations[0] | null>(null);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -292,14 +295,18 @@ const Index = () => {
         <div className="w-full lg:w-2/5 overflow-y-auto py-8 px-4 bg-background">
           <div className="max-w-xl mx-auto space-y-4">
             {locations.map((location) => (
-              <LocationCard key={location.name} {...location} />
+              <LocationCard 
+                key={location.name} 
+                {...location}
+                onDirectionsClick={() => setSelectedLocation(location)}
+              />
             ))}
           </div>
         </div>
 
         {/* Right Side - Interactive Map */}
         <div className="w-full lg:w-3/5 h-[400px] lg:h-auto sticky top-0">
-          <MapView locations={locations} />
+          <MapView locations={locations} selectedLocation={selectedLocation} />
         </div>
       </section>
 

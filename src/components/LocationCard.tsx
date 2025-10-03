@@ -10,9 +10,10 @@ interface LocationCardProps {
   serviceTimes: string[];
   image: string;
   mapsLink: string;
+  onDirectionsClick?: () => void;
 }
 
-export const LocationCard = ({ name, address, city, serviceTimes, image, mapsLink }: LocationCardProps) => {
+export const LocationCard = ({ name, address, city, serviceTimes, image, mapsLink, onDirectionsClick }: LocationCardProps) => {
   return (
     <Card className="group overflow-hidden border-0 shadow-[var(--card-shadow)] hover:shadow-[var(--hover-shadow)] transition-all duration-300">
       <div className="flex flex-row h-32">
@@ -47,7 +48,7 @@ export const LocationCard = ({ name, address, city, serviceTimes, image, mapsLin
               size="sm"
               variant="default" 
               className="flex-1 h-7 text-xs"
-              onClick={() => window.open(mapsLink, '_blank')}
+              onClick={onDirectionsClick}
             >
               Directions
               <ArrowRight className="w-3 h-3" />
