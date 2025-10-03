@@ -10,81 +10,94 @@ import location6 from "@/assets/location-6.jpg";
 
 const locations = [
   {
-    name: "Main Campus",
-    address: "123 Faith Avenue",
-    city: "Charlotte, NC 28203",
+    name: "Nairobi Main Campus",
+    address: "Ngong Road",
+    city: "Nairobi, Kenya",
     serviceTimes: [
       "Sunday: 9:00 AM, 11:00 AM, 5:00 PM",
       "Wednesday: 7:00 PM"
     ],
     image: location1,
-    lat: 35.2271,
-    lng: -80.8431,
-    mapsLink: "https://maps.google.com/?q=Charlotte+NC"
+    lat: -1.2921,
+    lng: 36.8219,
+    mapsLink: "https://maps.google.com/?q=Ngong+Road+Nairobi+Kenya"
   },
   {
-    name: "Uptown",
-    address: "456 Grace Street",
-    city: "Charlotte, NC 28202",
+    name: "Mombasa Campus",
+    address: "Moi Avenue",
+    city: "Mombasa, Kenya",
     serviceTimes: [
       "Sunday: 10:00 AM, 12:00 PM",
       "Thursday: 6:30 PM"
     ],
     image: location2,
-    lat: 35.2276,
-    lng: -80.8434,
-    mapsLink: "https://maps.google.com/?q=Charlotte+NC+Uptown"
+    lat: -4.0435,
+    lng: 39.6682,
+    mapsLink: "https://maps.google.com/?q=Moi+Avenue+Mombasa+Kenya"
   },
   {
-    name: "Ballantyne",
-    address: "789 Hope Boulevard",
-    city: "Charlotte, NC 28277",
+    name: "Kisumu Campus",
+    address: "Oginga Odinga Street",
+    city: "Kisumu, Kenya",
     serviceTimes: [
       "Sunday: 9:30 AM, 11:30 AM",
       "Wednesday: 7:00 PM"
     ],
     image: location3,
-    lat: 35.0513,
-    lng: -80.8485,
-    mapsLink: "https://maps.google.com/?q=Ballantyne+Charlotte+NC"
+    lat: -0.0917,
+    lng: 34.7680,
+    mapsLink: "https://maps.google.com/?q=Kisumu+Kenya"
   },
   {
-    name: "Matthews",
-    address: "321 Mercy Lane",
-    city: "Matthews, NC 28105",
+    name: "Dar es Salaam Campus",
+    address: "Samora Avenue",
+    city: "Dar es Salaam, Tanzania",
     serviceTimes: [
       "Sunday: 8:30 AM, 10:30 AM, 6:00 PM"
     ],
     image: location4,
-    lat: 35.1168,
-    lng: -80.7234,
-    mapsLink: "https://maps.google.com/?q=Matthews+NC"
+    lat: -6.7924,
+    lng: 39.2083,
+    mapsLink: "https://maps.google.com/?q=Dar+es+Salaam+Tanzania"
   },
   {
-    name: "SouthPark",
-    address: "654 Love Drive",
-    city: "Charlotte, NC 28210",
+    name: "Kigali Campus",
+    address: "KN 3 Road",
+    city: "Kigali, Rwanda",
     serviceTimes: [
       "Sunday: 9:00 AM, 11:00 AM",
       "Tuesday: 7:00 PM"
     ],
     image: location5,
-    lat: 35.1583,
-    lng: -80.8280,
-    mapsLink: "https://maps.google.com/?q=SouthPark+Charlotte+NC"
+    lat: -1.9403,
+    lng: 29.8739,
+    mapsLink: "https://maps.google.com/?q=Kigali+Rwanda"
   },
   {
-    name: "University City",
-    address: "987 Peace Road",
-    city: "Charlotte, NC 28213",
+    name: "Toronto Campus",
+    address: "Yonge Street",
+    city: "Toronto, Canada",
     serviceTimes: [
       "Sunday: 10:00 AM, 12:00 PM, 5:00 PM",
       "Wednesday: 6:30 PM"
     ],
     image: location6,
-    lat: 35.3087,
-    lng: -80.7323,
-    mapsLink: "https://maps.google.com/?q=University+City+Charlotte+NC"
+    lat: 43.6532,
+    lng: -79.3832,
+    mapsLink: "https://maps.google.com/?q=Toronto+Canada"
+  },
+  {
+    name: "London Campus",
+    address: "Oxford Street",
+    city: "London, United Kingdom",
+    serviceTimes: [
+      "Sunday: 9:00 AM, 11:00 AM",
+      "Friday: 7:00 PM"
+    ],
+    image: location1,
+    lat: 51.5074,
+    lng: -0.1278,
+    mapsLink: "https://maps.google.com/?q=London+UK"
   }
 ];
 
@@ -98,7 +111,7 @@ const Index = () => {
             Find a Location Near You
           </h1>
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-            Join us for inspiring worship and meaningful community at one of our welcoming campuses across the region.
+            Join us for inspiring worship and meaningful community at one of our welcoming campuses across Kenya, East Africa, and around the world.
           </p>
         </div>
       </section>
